@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95becf514a8fab4eba9261a56046be2, type: 3}
+  m_Name: Mp5
+  m_EditorClassIdentifier: 
+  itemName: Mp5
+  itemType: Weapon
+  _itemType: 0
+  icon: {fileID: -5567177974214347873, guid: 31847be8b47e1f04696f7ab5670dc2e6, type: 3}
+  itemID: Mp5
+  itemDescription: Slightly better than uzi
+  inputKey: 101
+  model: {fileID: 6430733109803348369, guid: 3791eb7f61458f841a0b33f6e33c5632, type: 3}
+  weight: 3
+  canSell: 1
+  value: 35
+  amountThreshold: 200
+  lifeTime: 2
+  haveLifeTime: 1
+  attack: {fileID: 0}
+  armor_modelType: 0
+  armor_Model: {fileID: 0}
+  armor_Sprite: {fileID: 0}
+  hide_Hair: 0
+  armorType: 0
+  wearSlot: 0
+  armor: 0
+  armor_regen: 0
+  defense: 0
+  range: 1
+  speed: 1
+  useOnDelete: 0
+  isConsumable: 0
+  effectDescription: 
+  consumeEffect: []
+  isWeapon: 1
+  canAttack: 1
+  swing: 0
+  recoil: -0.4
+  swingOffset: 0
+  damage: 15
+  cooldown: 0.1
+  knockBack: 1
+  knockBack_Duration: 0
+  userKnockBack: 0
+  userKnockBack_Duration: 1
+  durability: 400
+  weaponType: 1
+  effects: []
+  canMelee: 0
+  hitbox: {fileID: 0}
+  hitboxData: {fileID: 0}
+  mele_manaConsume: 0
+  canShoot: 1
+  fireAmount: 1
+  maxAmmo: 1
+  spread: 1
+  bulletSpeed: 40
+  bulletLifetime: 5
+  shooting_manaConsume: 0
+  reload_manaConsume: 15
+  clipSize: 40
+  reload: 1.5
+  emit: 8
+  projectile: {fileID: 7422263984037488310, guid: 0834809b8e8142f4f88bd62ad1d9c3ed, type: 3}
+  projectileDat: {fileID: 11400000, guid: 87545670275b8ec41bb75297050f9054, type: 2}
+  projectilePath: 
+  options: []

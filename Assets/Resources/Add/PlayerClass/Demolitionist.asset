@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4d15be90e4f8c1488dc2646cee44dad, type: 3}
+  m_Name: Demolitionist
+  m_EditorClassIdentifier: 
+  id: 0
+  class_Name: Scout
+  des: 
+  icon: {fileID: -269128851, guid: f7e0deb2415d20142a9e725f737a33a7, type: 3}
+  health: 125
+  mana: 75
+  defense: 5
+  armor: 50
+  speed: 5
+  maxSpeed: 5
+  range: 6
+  Head: {fileID: 3607794423376073356, guid: f7e0deb2415d20142a9e725f737a33a7, type: 3}
+  Hair: {fileID: 0}
+  Body: {fileID: 394091263, guid: f7e0deb2415d20142a9e725f737a33a7, type: 3}
+  Leg: {fileID: 1800539988, guid: f7e0deb2415d20142a9e725f737a33a7, type: 3}
+  Hand: {fileID: -7581550866351302604, guid: 21689a6654023c441a013366aba84fdc, type: 3}
+  loadout:
+  - itemID: 0
+    amount: 120
+    holder: {fileID: 0}
+    storage: {fileID: 0}
+    itemRef: {fileID: 11400000, guid: a68836c6a7f617f409386cccb72eec29, type: 2}
+    ammo: 0
+    reloading: 1
+    attachments: []
+  - itemID: 1
+    amount: 5
+    holder: {fileID: 0}
+    storage: {fileID: 0}
+    itemRef: {fileID: 11400000, guid: 83a1f3904415ebb45a06ee7246e04bcf, type: 2}
+    ammo: 0
+    reloading: 0
+    attachments: []

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95becf514a8fab4eba9261a56046be2, type: 3}
+  m_Name: BioVest
+  m_EditorClassIdentifier: 
+  itemName: BioVest
+  itemType: Armor
+  _itemType: 1
+  icon: {fileID: 7763714682512589182, guid: cd5fdece658490d47aaca21621b585b5, type: 3}
+  itemID: BioVest
+  itemDescription: A vest that can regen armor
+  inputKey: 101
+  model: {fileID: 7085547375228859915, guid: c7b3995de2464f34ea134605be3fc180, type: 3}
+  weight: 2
+  canSell: 1
+  value: 50
+  amountThreshold: 1
+  lifeTime: 2
+  haveLifeTime: 1
+  attack: {fileID: 0}
+  armor_modelType: 1
+  armor_Model: {fileID: 7085547375228859915, guid: c7b3995de2464f34ea134605be3fc180, type: 3}
+  armor_Sprite: {fileID: 309628545801974608, guid: 0f22fa58f154454459fe901f39632553, type: 3}
+  hide_Hair: 1
+  armorType: 1
+  wearSlot: 1
+  armor: 40
+  armor_regen: 5
+  defense: 10
+  range: 0
+  speed: 0
+  useOnDelete: 0
+  isConsumable: 0
+  effectDescription: 
+  consumeEffect: []
+  isWeapon: 0
+  canAttack: 0
+  swing: 0
+  recoil: 0
+  swingOffset: 0
+  damage: 0
+  cooldown: 0
+  knockBack: 0
+  knockBack_Duration: 1
+  userKnockBack: 0
+  userKnockBack_Duration: 1
+  durability: 100
+  weaponType: 0
+  effects: []
+  canMelee: 0
+  hitbox: {fileID: 0}
+  hitboxData: {fileID: 0}
+  mele_manaConsume: 0
+  canShoot: 0
+  fireAmount: 1
+  maxAmmo: 1
+  spread: 0
+  bulletSpeed: 5
+  bulletLifetime: 5
+  shooting_manaConsume: 0
+  reload_manaConsume: 0
+  clipSize: 0
+  reload: 0
+  emit: 0
+  projectile: {fileID: 0}
+  projectileDat: {fileID: 0}
+  projectilePath: 
+  options: []

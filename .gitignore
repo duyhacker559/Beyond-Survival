@@ -1,0 +1,69 @@
+# Loại bỏ thư mục tạm thời
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# Loại bỏ file Visual Studio
+*.csproj
+*.sln
+*.userprefs
+.vs/TestTTCS/FileContentIndex/bee5d83e-5aed-43a4-8bdd-e40f1c06a2d1.vsidx
+.vs/TestTTCS/FileContentIndex/e37f7288-d7d5-4371-b39e-e7ab4445bf09.vsidx
+<<<<<<< Updated upstream
+.vs/TestTTCS/FileContentIndex/8ba20489-cddf-487b-a622-4928ff880278.vsidx
+<<<<<<< Updated upstream
+=======
+.vs/TestTTCS/FileContentIndex/ec3a40c3-b312-4f75-bdeb-1046c3a7b446.vsidx
+>>>>>>> Stashed changes
+.vs/TestTTCS/FileContentIndex/ff3e7a36-b7f4-438f-a043-b75400de6c57.vsidx
+=======
+.vs/TestTTCS/FileContentIndex/f63710ba-f310-43b1-bbfd-a9d7ac4f48f0.vsidx
+>>>>>>> Stashed changes
+.vs/TestTTCS/FileContentIndex/3be1e3aa-e5c5-40e8-b7dd-4fa0dbda5c0f.vsidx
+.vs/TestTTCS/FileContentIndex/64160f0f-343b-4d29-98eb-f661de2e96cc.vsidx
+.vs/TestTTCS/FileContentIndex/b2b2a157-d977-4c3d-9215-1b5085dff8df.vsidx
+.vs/TestTTCS/FileContentIndex/d897729a-3bb8-4f2f-8ad3-a579b47ba252.vsidx
+.vs/TestTTCS/FileContentIndex/c09a56a4-279f-447b-a5d8-023ecc6dd9fc.vsidx
+.vs/TestTTCS/FileContentIndex/9e50ef91-9cdb-48b7-9e71-727c49dd8e4d.vsidx
+.vs/TestTTCS/FileContentIndex/8f1a16b7-94e0-4ee2-ba1d-f287bc713824.vsidx
+.vs/TestTTCS/FileContentIndex/328ae557-5931-47dc-a95c-e50f11a9c43a.vsidx
+.vs/TestTTCS/FileContentIndex/19495749-21d7-4f34-b55a-36939fcf7074.vsidx
+.vs/TestTTCS/FileContentIndex/286dc248-956f-4526-8428-6f6207c5eb41.vsidx
+.vs/TestTTCS/FileContentIndex/481f5723-113a-401b-9fd7-2c9ff756887c.vsidx
+.vs/TestTTCS/FileContentIndex/851f753a-6ad5-4582-ba3e-df89131f3c38.vsidx
+.vs/TestTTCS/FileContentIndex/b4eb63e8-71b6-43b2-9744-2afd2eb659f6.vsidx
+.vs/TestTTCS/FileContentIndex/ea8738a9-112a-46ec-a404-045ac48fef2f.vsidx
+.vs/TestTTCS/FileContentIndex/c3a8bcc7-6605-40c8-93b0-3fc5ebc16d19.vsidx
+.vs/TestTTCS/FileContentIndex/bc72c75d-7cb7-4447-8e43-8df3e069c64c.vsidx
+.vs/TestTTCS/FileContentIndex/b6fbd4cf-4933-41be-b1f9-913531b0ab5a.vsidx
+.vs/TestTTCS/FileContentIndex/90c9f5d8-e25f-4a61-83ed-3d814dc33a23.vsidx
+.vs/TestTTCS/FileContentIndex/721030e3-5cde-49fd-a9aa-0e6422d84ffb.vsidx
+.vs/TestTTCS/FileContentIndex/65e2973b-3b8f-44b8-81de-4a326060a00e.vsidx
+.vs/TestTTCS/FileContentIndex/531d6799-e606-4ad9-ae41-5678deacb3d7.vsidx
+.vs/TestTTCS/FileContentIndex/2d581ee4-0c3f-4179-8ec8-8705e1e98b18.vsidx
+.vs/TestTTCS/FileContentIndex/11ea4a65-ecca-418d-acb6-a11bd7cf03bc.vsidx
+.vs/TestTTCS/FileContentIndex/f0415115-fc3b-484d-aa1d-2681517f4059.vsidx
+.vs/TestTTCS/FileContentIndex/becdfa90-3e30-4c28-b15e-eac719024640.vsidx
+.vs/TestTTCS/FileContentIndex/6918e1a2-285c-4fb8-a806-206cf8bc10e0.vsidx
+.vs/TestTTCS/FileContentIndex/0483185a-210e-40c1-8709-4cfbd630808e.vsidx
+.vs/TestTTCS/FileContentIndex/19ae09af-1f6d-485a-8234-8b83a7396ec2.vsidx
+.vs/TestTTCS/FileContentIndex/34f6c574-9a1a-4b0a-aa8b-cb3669347f48.vsidx
+.vs/TestTTCS/FileContentIndex/42ed25cb-8021-40e7-a73d-f8a7f032b0f2.vsidx
+.vs/TestTTCS/FileContentIndex/598c3d4e-5fec-4ea6-a766-50c258d0bb7d.vsidx
+.vs/TestTTCS/FileContentIndex/6710232c-9aec-43f7-9869-b1b5c3bbadf6.vsidx
+.vs/TestTTCS/FileContentIndex/76e9db26-e45b-4acb-88bc-46575e3d9d18.vsidx
+.vs/TestTTCS/FileContentIndex/8f02b37f-b2a2-494e-a5b1-ab6f812e57cb.vsidx
+.vs/TestTTCS/FileContentIndex/a7889d87-91a7-4738-a464-ffc2a4bf1508.vsidx
+.vs/TestTTCS/FileContentIndex/ab732d1a-3948-4daa-9d34-fca2e2bb3e39.vsidx
+.vs/TestTTCS/FileContentIndex/9bcaf400-380b-4101-945a-49a8cba19c33.vsidx
+.vs/TestTTCS/FileContentIndex/7b35cd38-5a24-4a9c-ac81-42c2732f71f9.vsidx
+.vs/TestTTCS/FileContentIndex/52619008-3da5-49f2-a3e6-cf21e6aed8ea.vsidx
+.vs/TestTTCS/FileContentIndex/4d8bae0e-c757-46ea-9a5e-5348e573ab50.vsidx
+.vs/TestTTCS/FileContentIndex/332b4437-5f2b-472f-8ccb-5d0a49fb4f69.vsidx
+.vs/TestTTCS/FileContentIndex/839bf2ac-32cf-442f-9beb-66f0521959dd.vsidx
+.vs/TestTTCS/FileContentIndex/bccb83ed-0975-4f97-a5ec-68471066746c.vsidx
+.vs/TestTTCS/FileContentIndex/dfd2c5f2-44e2-48fd-93ed-dbf2342f26f0.vsidx

@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1f069031c7aed4390c8a02ed9de8d8, type: 3}
+  m_Name: FoodCrate1
+  m_EditorClassIdentifier: 
+  ID: FoodCrate1
+  Point: 100
+  Health: 100
+  Speed: 3
+  Armor: 0
+  Defense: 0
+  haveLifeTime: 1
+  lifeTime: 2
+  isBoss: 0
+  stun_Resistance: 0
+  huntsDelay: 2
+  meleeAttacks: []
+  rangedAttacks: []
+  WaitTime: 1
+  EnemyModel: {fileID: 7300319063617135439, guid: bf0b8b9b408df9546a6b07f7fc8ba48c, type: 3}
+  Detection_Range: 20
+  Detection_Rate: 0.2
+  Chasing_Time_Threshold: 1
+  path: Add/EnemyModel/Crate
+  Loot:
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 2393bdcf2cd69744d81ba71a7bc443cc, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 30
+  - item:
+      Items:
+      - itemID: 0
+        amount: 1
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: b16e92bacc47bfa4084c86c79ed19316, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 30
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 25da450f07b793d4fb126e86103ef727, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 30
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 268e3344ed18fcf4eadfa4bf25399c7b, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 5
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 7e832ece4f2424f4b995a96a9ca4feec, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 5
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: a5cb8a1b8764ac34eb2449512709418c, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 3
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 7f479bc914e48994aad7dd2be029f318, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 3
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 7f479bc914e48994aad7dd2be029f318, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 3
+  canExplode: 0
+  explode_Damage: 0
+  explode_KnockBack: 0
+  explode_KnockBackDuration: 0
+  explode_Emit: {fileID: 0}
+  explode_Hitbox: {fileID: 0}
+  explode_HitboxData: {fileID: 0}
+  explode_Effect: []
+  cloacked: 0
+  unCloakRange: 1
+  holdEnemy: 0
+  holdRange: 1

@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1f069031c7aed4390c8a02ed9de8d8, type: 3}
+  m_Name: CashCrate3
+  m_EditorClassIdentifier: 
+  ID: CashCrate1
+  Point: 100
+  Health: 100
+  Speed: 3
+  Armor: 0
+  Defense: 0
+  haveLifeTime: 1
+  lifeTime: 2
+  isBoss: 0
+  stun_Resistance: 0
+  huntsDelay: 2
+  meleeAttacks: []
+  rangedAttacks: []
+  WaitTime: 1
+  EnemyModel: {fileID: 7300319063617135439, guid: bf0b8b9b408df9546a6b07f7fc8ba48c, type: 3}
+  Detection_Range: 20
+  Detection_Rate: 0.2
+  Chasing_Time_Threshold: 1
+  path: Add/EnemyModel/Crate
+  Loot:
+  - item:
+      Items:
+      - itemID: 0
+        amount: 1
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 61cb78406ac4d51448479f979867c7cc, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 1
+  - item:
+      Items:
+      - itemID: 0
+        amount: 4
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 80e785d0ba4b887429eaa88ebe79fd25, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 10
+  - item:
+      Items:
+      - itemID: 0
+        amount: 2
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 80e785d0ba4b887429eaa88ebe79fd25, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 30
+  - item:
+      Items:
+      - itemID: 0
+        amount: 1
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 80e785d0ba4b887429eaa88ebe79fd25, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 50
+  canExplode: 0
+  explode_Damage: 0
+  explode_KnockBack: 0
+  explode_KnockBackDuration: 0
+  explode_Emit: {fileID: 0}
+  explode_Hitbox: {fileID: 0}
+  explode_HitboxData: {fileID: 0}
+  explode_Effect: []
+  cloacked: 0
+  unCloakRange: 1
+  holdEnemy: 0
+  holdRange: 1

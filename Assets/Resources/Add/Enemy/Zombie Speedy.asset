@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1f069031c7aed4390c8a02ed9de8d8, type: 3}
+  m_Name: Zombie Speedy
+  m_EditorClassIdentifier: 
+  ID: Zombie Speedy
+  Point: 100
+  Health: 75
+  Speed: 5
+  Armor: 0
+  Defense: 0
+  isBoss: 0
+  stun_Resistance: 0
+  huntsDelay: 2
+  meleeAttacks:
+  - delay: 0
+    waitTime: 1
+    soundIndex: -1
+    animIndex: -1
+    Damage: 10
+    Range: 2
+    Attack_Rate: 1
+    Attack_KB: 0
+    Attack_KBDuration: 0
+    Attack_Amount: 1
+    Attack_Reload: 0
+    Attack_Effect: []
+    Attack_Hitbox: {fileID: 1609670737341773925, guid: 172eaaca6aa6cbb4db63c7ae4998de6c, type: 3}
+    areaAttackDat: {fileID: 11400000, guid: aaa66347ffd8b0c46acadaba1f5725e3, type: 2}
+    Detect_Rate: 0.1
+    clipSize: 1
+    group: 0
+  rangedAttacks: []
+  WaitTime: 1
+  EnemyModel: {fileID: 7300319063617135439, guid: 361758570b6d1df4799f2ab11dc20cb6, type: 3}
+  Detection_Range: 20
+  Detection_Rate: 0.2
+  Chasing_Time_Threshold: 1
+  path: Add/EnemyModel/Enemy2
+  Loot:
+  - item:
+      Items:
+      - itemID: 0
+        amount: 1
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 80e785d0ba4b887429eaa88ebe79fd25, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 0
+  - item:
+      Items:
+      - itemID: 0
+        amount: 5
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 3862a6be148332948ac0df68458a50b2, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 20
+  - item:
+      Items:
+      - itemID: 0
+        amount: 3
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 3862a6be148332948ac0df68458a50b2, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 35
+  canExplode: 0
+  explode_Damage: 0
+  explode_KnockBack: 0
+  explode_KnockBackDuration: 0
+  explode_Emit: {fileID: 0}
+  explode_Hitbox: {fileID: 0}
+  explode_HitboxData: {fileID: 0}
+  explode_Effect: []
+  cloacked: 0
+  unCloakRange: 1
+  holdEnemy: 0
+  holdRange: 1

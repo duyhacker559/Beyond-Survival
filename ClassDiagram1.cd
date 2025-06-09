@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DamageEffect">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARABAAAAAAgQAAAAAAAAAAEAAEAAAAAAAAAAAAAAiA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttackScript">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Item">
+    <Position X="4" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AOjgQAQIBACggAVAEAAACqZFASgISSAgOwjCoBYIACI=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ItemType" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAEAAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WeaponType" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ArmorModelType" Collapsed="true">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ArmorType" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAIAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ValueType" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAgACA=</HashCode>
+      <FileName>Assets\Scripts\ScriptableObject\Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

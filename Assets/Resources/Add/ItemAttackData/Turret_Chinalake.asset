@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6eb20939e35d7948b34984392dfa1bb, type: 3}
+  m_Name: Turret_Chinalake
+  m_EditorClassIdentifier: 
+  meleeAttacks: []
+  rangedAttacks:
+  - delay: 55
+    waitTime: 0
+    soundIndex: 0
+    animIndex: 0
+    Damage: 5
+    Range: 12
+    Attack_Rate: 3
+    Attack_KB: 0
+    Attack_KBDuration: 0
+    Attack_Amount: 1
+    Attack_Reload: 55
+    Attack_Effect: []
+    Attack_Hitbox: {fileID: 0}
+    Detect_Rate: 1
+    group: 1
+    ranged_spread: 3
+    ranged_bulletSpeed: 25
+    ranged_bulletLifetime: 3
+    clipSize: 4
+    emit: 6
+    ranged_projectileDat: {fileID: 11400000, guid: 4c62488b970749a4d9bdbaa9053ce974, type: 2}
+    ranged_projectile: {fileID: 7422263984037488310, guid: 936b453e07184704ab42d5cc8638251f, type: 3}

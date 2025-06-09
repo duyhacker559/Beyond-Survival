@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5dd3be6f43a714989db8f528c4cf1d, type: 3}
+  m_Name: TurretMK2
+  m_EditorClassIdentifier: 
+  canSell: 0
+  shop:
+  - cost: 100
+    item: {fileID: 11400000, guid: 336b5e871d8b5bd4ba70cebeb9933479, type: 2}
+  - cost: 100
+    item: {fileID: 11400000, guid: 93ae610963277b94982feabdeaef6e96, type: 2}
+  - cost: 125
+    item: {fileID: 11400000, guid: e97281ec54090bb4daff43026ee39ac6, type: 2}
+  - cost: 125
+    item: {fileID: 11400000, guid: 662017d6651107648b8287353d21e2ad, type: 2}
+  - cost: 150
+    item: {fileID: 11400000, guid: 72a212ccab31d224b9f00685bc7075a0, type: 2}
+  - cost: 150
+    item: {fileID: 11400000, guid: e2a5908e48231fe44bad8f8834076fc1, type: 2}
+  - cost: 150
+    item: {fileID: 11400000, guid: cbf35661d482db147b300e4467572d78, type: 2}
+  - cost: 175
+    item: {fileID: 11400000, guid: 4526ed999453c514cbd93a1d4ab361c1, type: 2}
+  - cost: 200
+    item: {fileID: 11400000, guid: f26146d54de3f384cb0b083b2204417f, type: 2}
+  - cost: 250
+    item: {fileID: 11400000, guid: 08a876f6da6e98e44a8eac2fae81e88f, type: 2}
+  - cost: 225
+    item: {fileID: 11400000, guid: b06cf4eff1ed41a499bf5471525b1f69, type: 2}
+  - cost: 275
+    item: {fileID: 11400000, guid: 53ea25b10320a0447966eb5dfb7226a4, type: 2}
+  - cost: 275
+    item: {fileID: 11400000, guid: 713a1f4b7f051b9469a3e1a8b5589f02, type: 2}
+  - cost: 375
+    item: {fileID: 11400000, guid: 0391e922f0dc5ef4da1215755980cc70, type: 2}

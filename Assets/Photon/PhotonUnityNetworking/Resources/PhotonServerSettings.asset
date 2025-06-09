@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
+  m_Name: PhotonServerSettings
+  m_EditorClassIdentifier: 
+  AppSettings:
+    AppIdRealtime: 103d0110-fd85-482a-ad4b-752b74af8a9f
+    AppIdFusion: 
+    AppIdChat: 
+    AppIdVoice: 
+    AppVersion: 
+    UseNameServer: 1
+    FixedRegion: 
+    Server: 
+    Port: 0
+    ProxyServer: 
+    Protocol: 0
+    EnableProtocolFallback: 1
+    AuthMode: 0
+    EnableLobbyStatistics: 0
+    NetworkLogging: 1
+  DevRegion: asia
+  PunLogging: 0
+  EnableSupportLogger: 0
+  RunInBackground: 1
+  StartInOfflineMode: 0
+  RpcList:
+  - ClickRpc
+  - DestroyRpc
+  - DestroySpaceship
+  - Fire
+  - RespawnSpaceship
+  - RPC_Holding
+  - Client_AddItem
+  - Client_DropItem
+  - Master_AddItem
+  - Master_DropItem
+  - RPC_UpdateItem
+  - RPC_FlashEffect
+  - RPC_UpdateHealth
+  - RPC_UpdateArmor
+  - RPC_UpdateStats
+  - SetClass
+  - Master_UseItem
+  - UpdateMana
+  - Master_Attack
+  - RPC_Attack
+  - RPC_Wearing
+  - RPC_ChangeAvatar
+  - UpdateCash
+  - RPC_UpdateCash
+  - RPC_Fallen
+  - Master_RevivePlayer
+  - Master_Purchase
+  - RPC_SummonEffect
+  - RPC_CheckReload
+  - RPC_Reload
+  - RPC_Stunned
+  - RPC_Knockback
+  - RPC_RangedAttack
+  - RPC_ToggleHidden
+  - Master_Upgrade
+  - RPC_ShowDamage
+  - WIN
+  - RPC_Heal
+  - RPC_FlashEffectHeal
+  - RPC_UpdateMaxHP
+  - RPC_Animate
+  - RPC_Death
+  - Master_Sell
+  - RPC_Cash
+  DisableAutoOpenWizard: 1
+  ShowSettings: 0
+  DevRegionSetOnce: 1

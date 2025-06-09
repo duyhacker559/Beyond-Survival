@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95becf514a8fab4eba9261a56046be2, type: 3}
+  m_Name: Rock
+  m_EditorClassIdentifier: 
+  itemName: Rock
+  itemType: Consumable
+  _itemType: 2
+  icon: {fileID: 3452003437791708593, guid: 1a0836fefac337d4bb3336135605cb90, type: 3}
+  itemID: Rock
+  itemDescription: Big throwable rock
+  inputKey: 101
+  model: {fileID: 1281956672415766616, guid: 5f0084b301670d646a581a8bc83570cd, type: 3}
+  weight: 0
+  canSell: 1
+  value: 2
+  amountThreshold: 10
+  lifeTime: 2
+  haveLifeTime: 1
+  attack: {fileID: 0}
+  armor_modelType: 0
+  armor_Model: {fileID: 0}
+  armor_Sprite: {fileID: 0}
+  hide_Hair: 0
+  armorType: 0
+  wearSlot: 0
+  armor: 0
+  armor_regen: 0
+  defense: 0
+  range: 0
+  speed: 0
+  useOnDelete: 0
+  isConsumable: 1
+  effectDescription: Heal HP and MP
+  consumeEffect: []
+  isWeapon: 0
+  canAttack: 1
+  swing: 40
+  recoil: 0
+  swingOffset: 0
+  damage: 10
+  cooldown: 1
+  knockBack: 2
+  knockBack_Duration: 1
+  userKnockBack: 0
+  userKnockBack_Duration: 1
+  durability: 100
+  weaponType: 1
+  effects: []
+  canMelee: 0
+  hitbox: {fileID: 0}
+  hitboxData: {fileID: 0}
+  mele_manaConsume: 0
+  canShoot: 1
+  fireAmount: 1
+  maxAmmo: 1
+  spread: 0
+  bulletSpeed: 15
+  bulletLifetime: 5
+  shooting_manaConsume: 0
+  reload_manaConsume: 0
+  clipSize: 0
+  reload: 0
+  emit: 0
+  projectile: {fileID: 7422263984037488310, guid: 1fa16f072552fab4d8a7eb429b6e8933, type: 3}
+  projectileDat: {fileID: 11400000, guid: 87545670275b8ec41bb75297050f9054, type: 2}
+  projectilePath: 
+  options: []

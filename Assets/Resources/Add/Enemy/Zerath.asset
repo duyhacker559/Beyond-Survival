@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1f069031c7aed4390c8a02ed9de8d8, type: 3}
+  m_Name: Zerath
+  m_EditorClassIdentifier: 
+  ID: Zerath
+  Point: 100
+  Health: 10000
+  Speed: 2.5
+  Armor: 0
+  Defense: 0
+  isBoss: 1
+  stun_Resistance: 1
+  huntsDelay: 0
+  meleeAttacks:
+  - delay: 5
+    waitTime: 1
+    soundIndex: -1
+    animIndex: -1
+    Damage: 300
+    Range: 3
+    Attack_Rate: 2
+    Attack_KB: 1
+    Attack_KBDuration: 1
+    Attack_Amount: 1
+    Attack_Reload: 0
+    Attack_Effect: []
+    Attack_Hitbox: {fileID: 1609670737341773925, guid: 2f1bbd97b56453340a66ae128746f296, type: 3}
+    areaAttackDat: {fileID: 11400000, guid: aaa66347ffd8b0c46acadaba1f5725e3, type: 2}
+    Detect_Rate: 0.1
+    clipSize: 1
+    group: 0
+  - delay: 15
+    waitTime: 2
+    soundIndex: -1
+    animIndex: -1
+    Damage: 400
+    Range: 5
+    Attack_Rate: 10
+    Attack_KB: 1
+    Attack_KBDuration: 1
+    Attack_Amount: 1
+    Attack_Reload: 0
+    Attack_Effect: []
+    Attack_Hitbox: {fileID: 3290753383281791754, guid: 7c26356ca9b97484595ae50784231546, type: 3}
+    areaAttackDat: {fileID: 11400000, guid: aaa66347ffd8b0c46acadaba1f5725e3, type: 2}
+    Detect_Rate: 0.1
+    clipSize: 1
+    group: 0
+  rangedAttacks:
+  - delay: 5
+    waitTime: 0
+    soundIndex: -1
+    animIndex: -1
+    Damage: 25
+    Range: 10
+    Attack_Rate: 2
+    Attack_KB: 0
+    Attack_KBDuration: 0
+    Attack_Amount: 3
+    Attack_Reload: 0
+    Attack_Effect:
+    - _show: 0
+      timer: 0
+      tick: 4
+      lifeTime: 12
+      id: Poison
+      power: 1
+      canStack: 0
+      canOveride: 0
+      effects:
+      - _show: 0
+        modify_ID: HP
+        modify_Type: 0
+        modify_Des: 
+        modify_IntValue: 25
+        modify_FloatValue: 0
+        modify_BoolValue: 0
+        modify_StringValue: 
+    Attack_Hitbox: {fileID: 0}
+    Detect_Rate: 0.1
+    group: 0
+    ranged_spread: 10
+    ranged_bulletSpeed: 15
+    ranged_bulletLifetime: 5
+    clipSize: 1
+    ranged_projectileDat: {fileID: 11400000, guid: 87545670275b8ec41bb75297050f9054, type: 2}
+    ranged_projectile: {fileID: 7422263984037488310, guid: 273c9ba0b126d2f47b2e241fa65b742a, type: 3}
+  WaitTime: 1
+  EnemyModel: {fileID: 7300319063617135439, guid: 59aed766a094187408eefdc39dcf8b54, type: 3}
+  Detection_Range: 20
+  Detection_Rate: 0.2
+  Chasing_Time_Threshold: 1
+  path: Add/EnemyModel/Boss
+  Loot:
+  - item:
+      Items:
+      - itemID: 0
+        amount: 100
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 61cb78406ac4d51448479f979867c7cc, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+      - itemID: 0
+        amount: 1
+        holder: {fileID: 0}
+        storage: {fileID: 0}
+        itemRef: {fileID: 11400000, guid: 76961c08c7fd2824f81d469a1664fb9d, type: 2}
+        ammo: 0
+        reloading: 0
+        attachments: []
+    weight: 1
+  canExplode: 0
+  explode_Damage: 0
+  explode_KnockBack: 0
+  explode_KnockBackDuration: 0
+  explode_Emit: {fileID: 0}
+  explode_Hitbox: {fileID: 0}
+  explode_HitboxData: {fileID: 0}
+  explode_Effect: []
+  cloacked: 0
+  unCloakRange: 1
+  holdEnemy: 0
+  holdRange: 1

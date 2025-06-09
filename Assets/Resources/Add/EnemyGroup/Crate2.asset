@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05459988bfa6274f842260558285edc, type: 3}
+  m_Name: Crate2
+  m_EditorClassIdentifier: 
+  groups:
+  - item: {fileID: 11400000, guid: 307cf3985118bc2469eddac5a81e2753, type: 2}
+    weight: 5
+  - item: {fileID: 11400000, guid: 45cce0fd224db71448527351cd90e825, type: 2}
+    weight: 5
+  - item: {fileID: 11400000, guid: 9d534a3039dff184b90809d005e73339, type: 2}
+    weight: 5
+  - item: {fileID: 11400000, guid: 312fb2ff5a57f5f4eb732ecae7358a5e, type: 2}
+    weight: 1

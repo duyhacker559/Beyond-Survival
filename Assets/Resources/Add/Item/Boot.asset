@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95becf514a8fab4eba9261a56046be2, type: 3}
+  m_Name: Boot
+  m_EditorClassIdentifier: 
+  itemName: Boot
+  itemType: Armor
+  _itemType: 1
+  icon: {fileID: 7653278772246931249, guid: c371d3389ed4abe4db30851ed127c6e1, type: 3}
+  itemID: Boot
+  itemDescription: A Boot
+  inputKey: 101
+  model: {fileID: 7085547375228859915, guid: 6e537ba5350de244e9aeb84f757f8eed, type: 3}
+  weight: 2
+  canSell: 1
+  value: 15
+  amountThreshold: 1
+  lifeTime: 2
+  haveLifeTime: 1
+  attack: {fileID: 0}
+  armor_modelType: 0
+  armor_Model: {fileID: 0}
+  armor_Sprite: {fileID: 7653278772246931249, guid: c371d3389ed4abe4db30851ed127c6e1, type: 3}
+  hide_Hair: 1
+  armorType: 2
+  wearSlot: 2
+  armor: 10
+  armor_regen: 0
+  defense: 5
+  range: 0
+  speed: 0
+  useOnDelete: 0
+  isConsumable: 0
+  effectDescription: 
+  consumeEffect: []
+  isWeapon: 0
+  canAttack: 0
+  swing: 0
+  recoil: 0
+  swingOffset: 0
+  damage: 0
+  cooldown: 0
+  knockBack: 0
+  knockBack_Duration: 1
+  userKnockBack: 0
+  userKnockBack_Duration: 1
+  durability: 100
+  weaponType: 0
+  effects: []
+  canMelee: 0
+  hitbox: {fileID: 0}
+  hitboxData: {fileID: 0}
+  mele_manaConsume: 0
+  canShoot: 0
+  fireAmount: 1
+  maxAmmo: 1
+  spread: 0
+  bulletSpeed: 5
+  bulletLifetime: 5
+  shooting_manaConsume: 0
+  reload_manaConsume: 0
+  clipSize: 0
+  reload: 0
+  emit: 0
+  projectile: {fileID: 0}
+  projectileDat: {fileID: 0}
+  projectilePath: 
+  options: []
