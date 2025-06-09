@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   meleeAttacks: []
   rangedAttacks:
-  - delay: 70
+  - delay: 60
     waitTime: 0
     soundIndex: 0
     animIndex: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
     Attack_KB: 0
     Attack_KBDuration: 0.2
     Attack_Amount: 1
-    Attack_Reload: 70
+    Attack_Reload: 60
     Attack_Effect: []
     Attack_Hitbox: {fileID: 0}
     Detect_Rate: 0.5
