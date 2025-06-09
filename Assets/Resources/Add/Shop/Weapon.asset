@@ -16,6 +16,10 @@ MonoBehaviour:
   shop:
   - cost: 50
     item: {fileID: 11400000, guid: 5b116e820fc78ff4dbbcc8605efe029f, type: 2}
+  - cost: 60
+    item: {fileID: 11400000, guid: e88954f8c62f631459e2345df3b4c95a, type: 2}
+  - cost: 80
+    item: {fileID: 11400000, guid: 950abf67e4249454d9ebfb49067147d4, type: 2}
   - cost: 100
     item: {fileID: 11400000, guid: 5378420af25a5114b9663b6ae8af52b5, type: 2}
   - cost: 100
@@ -24,12 +28,12 @@ MonoBehaviour:
     item: {fileID: 11400000, guid: 943a409d7ce49d348ab3699395aeedb8, type: 2}
   - cost: 150
     item: {fileID: 11400000, guid: ffe3053c14c092d4891bee2cbe3bddfe, type: 2}
-  - cost: 250
+  - cost: 225
     item: {fileID: 11400000, guid: 11eec1f970d7f5640b14e349a6ad32d4, type: 2}
   - cost: 250
-    item: {fileID: 11400000, guid: 6aa31033acad77b479fb2634bb683825, type: 2}
-  - cost: 300
     item: {fileID: 11400000, guid: be4900a475aab594c9fc7d641cfeb7a9, type: 2}
+  - cost: 300
+    item: {fileID: 11400000, guid: 6aa31033acad77b479fb2634bb683825, type: 2}
   - cost: 15
     item: {fileID: 11400000, guid: a1081ebed4eebfe4bb4912edba22b720, type: 2}
   - cost: 15
@@ -42,7 +46,5 @@ MonoBehaviour:
     item: {fileID: 11400000, guid: b8fc779b7bdca5248a63a462d11ad2d5, type: 2}
   - cost: 75
     item: {fileID: 11400000, guid: f250614767089da4cad95b7db55402eb, type: 2}
-  - cost: 150
-    item: {fileID: 11400000, guid: 5d275e358cb529f40b9d37c438915768, type: 2}
   - cost: 150
     item: {fileID: 11400000, guid: 5d275e358cb529f40b9d37c438915768, type: 2}

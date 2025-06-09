@@ -22,8 +22,8 @@ MonoBehaviour:
   model: {fileID: 6430733109803348369, guid: 6ffcabb08b99904419f4ba3610239a5e, type: 3}
   weight: 0
   canSell: 1
-  value: 50
-  amountThreshold: 150
+  value: 8
+  amountThreshold: 30
   lifeTime: 2
   haveLifeTime: 1
   attack: {fileID: 0}
