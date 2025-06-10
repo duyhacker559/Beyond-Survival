@@ -18,9 +18,15 @@ MonoBehaviour:
   icon: {fileID: -2175301479841739688, guid: 642b04e22a427b44490f001680b9e42d, type: 3}
   itemID: SyringeGun
   itemDescription: A gun to heal your teamate
+  inputKey: 101
   model: {fileID: 6430733109803348369, guid: af8a71697a767f747a9c86c83d4baf4c, type: 3}
   weight: 0
+  canSell: 0
   value: 0
+  amountThreshold: 1
+  lifeTime: 2
+  haveLifeTime: 1
+  attack: {fileID: 0}
   armor_modelType: 0
   armor_Model: {fileID: 0}
   armor_Sprite: {fileID: 0}
@@ -42,7 +48,7 @@ MonoBehaviour:
   recoil: -0.2
   swingOffset: 0
   damage: -10
-  cooldown: 0.5
+  cooldown: 1
   knockBack: 0
   knockBack_Duration: 0
   userKnockBack: 0
@@ -52,17 +58,18 @@ MonoBehaviour:
   effects: []
   canMelee: 0
   hitbox: {fileID: 0}
+  hitboxData: {fileID: 0}
   mele_manaConsume: 0
   canShoot: 1
   fireAmount: 1
   maxAmmo: 1
-  spread: 0.2
+  spread: 1
   bulletSpeed: 25
   bulletLifetime: 5
   shooting_manaConsume: 0
-  reload_manaConsume: 35
+  reload_manaConsume: 60
   clipSize: 8
-  reload: 3
+  reload: 4
   emit: 5
   projectile: {fileID: 7422263984037488310, guid: 4f9dfb00fe7c2e241b480fe76871a9f3, type: 3}
   projectileDat: {fileID: 11400000, guid: 3d5b69a48d8237047ba89e4734902add, type: 2}

@@ -78,6 +78,7 @@ MonoBehaviour:
   - RPC_Death
   - Master_Sell
   - RPC_Cash
+  - RPC_ChatText
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

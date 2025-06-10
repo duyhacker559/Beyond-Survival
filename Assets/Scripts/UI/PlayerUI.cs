@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerUI : MonoBehaviour
 {
+    public static bool isChatting = false;
+
     [SerializeField] public static Transform UI = null;
     [SerializeField] public GameObject Current_Player = null;
 
@@ -27,6 +29,13 @@ public class PlayerUI : MonoBehaviour
     [Header("UI Inventory")]
     [SerializeField] GameObject ShopStorage = null;
     [SerializeField] GameObject ShopButton = null;
+
+    [Header("UI Chat")]
+    [SerializeField] GameObject Chat_UI = null;
+    [SerializeField] GameObject ChatText = null;
+    [SerializeField] GameObject Chats = null;
+    [SerializeField] GameObject Notification = null;
+    [SerializeField] GameObject ChatTextSample = null;
 
     [Header("Other UI")]
 
@@ -65,6 +74,8 @@ public class PlayerUI : MonoBehaviour
     HealthSystem health = null;
     public Player player = null;
 
+    private PhotonView view;
+
     // Item Interaction
 
     private float timer = 0f;
@@ -92,6 +103,7 @@ public class PlayerUI : MonoBehaviour
             Holder.Add(item.transform);
         }
         
+        view = GetComponent<PhotonView>();
         Game.localPlayer = Current_Player;
 
         UI = transform;
@@ -238,29 +250,96 @@ public class PlayerUI : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (!PlayerUI.isChatting)
         {
-            UseItem(Consumer_Slot[0].GetComponent<ItemHolder>());
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            UseItem(Consumer_Slot[1].GetComponent<ItemHolder>());
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            UseItem(Consumer_Slot[2].GetComponent<ItemHolder>());
-        }
-
-        if (PhotonNetwork.IsMasterClient)
-        {
-            if (Input.GetKeyDown(KeyCode.Keypad9))
+            if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-                Admin_UI.gameObject.SetActive(true);
+                UseItem(Consumer_Slot[0].GetComponent<ItemHolder>());
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                UseItem(Consumer_Slot[1].GetComponent<ItemHolder>());
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                UseItem(Consumer_Slot[2].GetComponent<ItemHolder>());
+            }
+
+            if (PhotonNetwork.IsMasterClient)
+            {
+                if (Input.GetKeyDown(KeyCode.Keypad9))
+                {
+                    Admin_UI.gameObject.SetActive(true);
+                }
             }
         }
     }
+
+    // Chat
+
+    [PunRPC]
+    private void RPC_ChatText(string player, string chat)
+    {
+        if (chat != "")
+        {
+            GameObject newChat = Instantiate(ChatTextSample, Chats.transform);
+
+            TextMeshProUGUI textMeshProUGUI = newChat.GetComponent<TextMeshProUGUI>();
+
+            textMeshProUGUI.SetText(player + ": " + chat);
+            newChat.transform.SetAsLastSibling();
+            newChat.SetActive(true);
+
+            if (player == PhotonNetwork.LocalPlayer.NickName)
+            {
+                textMeshProUGUI.color = Color.yellow;
+            }
+
+            if (!Chat_UI.activeSelf)
+            {
+                Notification.SetActive(true);
+            }
+
+            if (Chats.transform.childCount > 20)
+            {
+                Transform deleteChat = Chats.transform.GetChild(0);
+                deleteChat.gameObject.SetActive(false);
+
+                Destroy(deleteChat.gameObject);
+            }
+        }
+    }
+
+    public void ToggleIsChatting(bool value)
+    {
+        isChatting = value;
+    }
+
+    public void ToggleChatUI()
+    {
+        Chat_UI.SetActive(!Chat_UI.activeSelf);
+        if (Chat_UI.activeSelf)
+        {
+            Notification.SetActive(false);
+        }
+    }
+
+    public void Chat()
+    {
+        string text = "";
+
+        TMP_InputField textMeshProUGUI = ChatText.GetComponent<TMP_InputField>();
+        text = textMeshProUGUI.text;
+
+        textMeshProUGUI.SetTextWithoutNotify("");
+        if (text != "")
+        {
+            view.RPC("RPC_ChatText", RpcTarget.All, PhotonNetwork.LocalPlayer.NickName, text);
+        }
+    }
+
     // Inventory
 
     public void DropItem(int amount)

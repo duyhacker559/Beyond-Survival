@@ -158,6 +158,11 @@ public class Player : MonoBehaviour, IPunInstantiateMagicCallback
     {
         view = GetComponent<PhotonView>();
 
+        if (view.IsMine)
+        {
+            Destroy(transform.Find("Minimap").gameObject);
+        }
+
         gameObject.name = view.Owner.NickName;
 
         rb = GetComponent<Rigidbody2D>();
@@ -261,23 +266,26 @@ public class Player : MonoBehaviour, IPunInstantiateMagicCallback
             if (stunTimer > 0f)
             {
                 // Get Input (WASD or Arrow Keys)
-                movement.x = Input.GetAxis("Horizontal");
-                movement.y = Input.GetAxis("Vertical");
-
-                if (Input.GetKeyDown(KeyCode.Q) && !isDashing && dashCooldownTimer > 0f)
+                if (!PlayerUI.isChatting)
                 {
-                    if (ConsumeMana(dashManaConsume))
-                    {
-                        // Set the dash direction to the movement direction
-                        if (rb.linearVelocity.magnitude > 0)
-                        {
-                            moveDirrection = rb.linearVelocity.normalized;
-                        }
+                    movement.x = Input.GetAxis("Horizontal");
+                    movement.y = Input.GetAxis("Vertical");
 
-                        // Start dashing
-                        isDashing = true;
-                        dashCooldownTimer = -dashCooldown;
-                        dashTime = 0;
+                    if (Input.GetKeyDown(KeyCode.Q) && !isDashing && dashCooldownTimer > 0f)
+                    {
+                        if (ConsumeMana(dashManaConsume))
+                        {
+                            // Set the dash direction to the movement direction
+                            if (rb.linearVelocity.magnitude > 0)
+                            {
+                                moveDirrection = rb.linearVelocity.normalized;
+                            }
+
+                            // Start dashing
+                            isDashing = true;
+                            dashCooldownTimer = -dashCooldown;
+                            dashTime = 0;
+                        }
                     }
                 }
             }

@@ -779,20 +779,23 @@ public class PlayerInventory : MonoBehaviour
             scanTimer += Time.fixedDeltaTime;
             reloadCheckTimer += Time.fixedDeltaTime;
 
-            if (Input.GetKeyDown(KeyCode.F))
+            if (!PlayerUI.isChatting)
             {
-                PlayerUI.useMainWP = !(PlayerUI.useMainWP);
-                PlayerUI.UI.transform.GetComponent<PlayerUI>().UpdateWP();
-            }
+                if (Input.GetKeyDown(KeyCode.F))
+                {
+                    PlayerUI.useMainWP = !(PlayerUI.useMainWP);
+                    PlayerUI.UI.transform.GetComponent<PlayerUI>().UpdateWP();
+                }
 
-            if (Input.GetKeyDown(KeyCode.B))
-            {
-                PlayerUI.UI.transform.GetComponent<PlayerUI>().ToggleInventory();
-            }
+                if (Input.GetKeyDown(KeyCode.B))
+                {
+                    PlayerUI.UI.transform.GetComponent<PlayerUI>().ToggleInventory();
+                }
 
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                Reload();
+                if (Input.GetKeyDown(KeyCode.R))
+                {
+                    Reload();
+                }
             }
 
             if (scanTimer > 0f)
@@ -851,7 +854,7 @@ public class PlayerInventory : MonoBehaviour
                 canvas.transform.Find("Image").Find("Input").GetComponent<TextMeshProUGUI>().SetText(item.Data.itemRef.inputKey.ToString());
                 canvas.transform.localPosition = new Vector3(0, 0.6f + 0.05f * Mathf.Cos(Time.time * 2), 0);
 
-                if (Input.GetKeyDown(item.Data.itemRef.inputKey))
+                if (!PlayerUI.isChatting && Input.GetKeyDown(item.Data.itemRef.inputKey))
                 {
                     view.RPC("Master_AddItem", RpcTarget.MasterClient, nearestItem.name);
                     nearestItem = null;
@@ -865,7 +868,7 @@ public class PlayerInventory : MonoBehaviour
                     GameObject canvas = nearestFallen.transform.Find("Canvas").Find("Revive").gameObject;
                     canvas.SetActive(true);
 
-                    if (Input.GetKey(KeyCode.E))
+                    if (!PlayerUI.isChatting && Input.GetKey(KeyCode.E))
                     {
                         revivePower += Time.fixedDeltaTime;
                         if (revivePower >= 5f)
@@ -897,7 +900,7 @@ public class PlayerInventory : MonoBehaviour
                 GameObject canvas = nearestShop.transform.Find("Canvas").Find("Interact").gameObject;
                 canvas.SetActive(true);
 
-                if (Input.GetKey(KeyCode.E))
+                if (!PlayerUI.isChatting && Input.GetKey(KeyCode.E))
                 {
                     shopPower += Time.fixedDeltaTime;
                     if (shopPower >= 1f)
@@ -935,7 +938,7 @@ public class PlayerInventory : MonoBehaviour
                 GameObject canvas = nearestBlackSmith.transform.Find("Canvas").Find("Interact").gameObject;
                 canvas.SetActive(true);
 
-                if (Input.GetKey(KeyCode.E))
+                if (!PlayerUI.isChatting && Input.GetKey(KeyCode.E))
                 {
                     blackSmithPower += Time.fixedDeltaTime;
                     if (blackSmithPower >= 1f)
