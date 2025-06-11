@@ -465,12 +465,12 @@ public class PlayerInventory : MonoBehaviour
         if (index >= 0 && (item.itemRef.isConsumable || item.itemRef._itemType == ItemType.QuestItem))
         {
             Items[index].amount += item.amount;
-            PlayerUI.Instance.PrintNotif("Picked up " + item.amount + " " + item.itemRef.itemName);
+            if (view.IsMine) PlayerUI.Instance.PrintNotif("Picked up " + item.amount + " " + item.itemRef.itemName);
         }
         else
         {
             Items.Add(new ItemInstance(_itemIndex++, item));
-            PlayerUI.Instance.PrintNotif("Picked up " + item.amount + " " + item.itemRef.itemName);
+            if (view.IsMine) PlayerUI.Instance.PrintNotif("Picked up " + item.amount + " " + item.itemRef.itemName);
         }
         if (view.IsMine)
         {
