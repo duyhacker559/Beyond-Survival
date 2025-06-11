@@ -1,10 +1,13 @@
 using Photon.Pun;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerUI : MonoBehaviour
 {
+    public static PlayerUI Instance;
+
     public static bool isChatting = false;
     public static bool inInventory = false;
     public static bool inShop = false;
@@ -38,6 +41,10 @@ public class PlayerUI : MonoBehaviour
     [SerializeField] GameObject Chats = null;
     [SerializeField] GameObject Notification = null;
     [SerializeField] GameObject ChatTextSample = null;
+
+    [Header("UI Notif")]
+    [SerializeField] Transform Notif_UI = null;
+    [SerializeField] Transform Notif_Prefab = null;
 
     [Header("Other UI")]
 
@@ -82,6 +89,28 @@ public class PlayerUI : MonoBehaviour
 
     private float timer = 0f;
     private float atkCooldown = 0f;
+
+    public void PrintNotif(string text)
+    {
+        GameObject newNotif = Instantiate(Notif_Prefab.gameObject);
+        newNotif.transform.parent = Notif_UI;
+
+        TextMeshProUGUI textMeshProUGUI = newNotif.transform.GetComponent<TextMeshProUGUI>();
+        textMeshProUGUI.SetText(text);
+        newNotif.gameObject.SetActive(true);
+    }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
