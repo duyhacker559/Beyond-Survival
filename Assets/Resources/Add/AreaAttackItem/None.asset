@@ -17,9 +17,9 @@ MonoBehaviour:
   knockBackDuration: 0
   applyAll: 0
   areaAttack: 0
-  hitbox: {fileID: 0}
+  hitbox: {fileID: 1609670737341773925, guid: 172eaaca6aa6cbb4db63c7ae4998de6c, type: 3}
   effects: []
-  areaAttackDat: {fileID: 0}
+  areaAttackDat: {fileID: 11400000}
   emitEffect: 0
   animEffect: {fileID: 0}
   trap: 0

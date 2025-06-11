@@ -18,6 +18,8 @@ MonoBehaviour:
   Speed: 1.5
   Armor: 0
   Defense: 0
+  haveLifeTime: 0
+  lifeTime: 0
   isBoss: 0
   stun_Resistance: 0
   huntsDelay: 2
@@ -31,9 +33,13 @@ MonoBehaviour:
     Attack_Rate: 3
     Attack_KB: 0
     Attack_KBDuration: 0
+    Attack_Amount: 1
+    Attack_Reload: 0
     Attack_Effect: []
     Attack_Hitbox: {fileID: 1609670737341773925, guid: 172eaaca6aa6cbb4db63c7ae4998de6c, type: 3}
     areaAttackDat: {fileID: 11400000, guid: aaa66347ffd8b0c46acadaba1f5725e3, type: 2}
+    Detect_Rate: 0.1
+    clipSize: 1
     group: 0
   rangedAttacks: []
   WaitTime: 1
@@ -75,7 +81,7 @@ MonoBehaviour:
         ammo: 0
         reloading: 0
         attachments: []
-    weight: 30
+    weight: 20
   canExplode: 0
   explode_Damage: 0
   explode_KnockBack: 0

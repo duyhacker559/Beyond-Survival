@@ -18,6 +18,8 @@ MonoBehaviour:
   Speed: 2.5
   Armor: 0
   Defense: 0
+  haveLifeTime: 0
+  lifeTime: 0
   isBoss: 1
   stun_Resistance: 1
   huntsDelay: 0
@@ -93,6 +95,7 @@ MonoBehaviour:
     ranged_bulletSpeed: 15
     ranged_bulletLifetime: 5
     clipSize: 1
+    emit: 1
     ranged_projectileDat: {fileID: 11400000, guid: 87545670275b8ec41bb75297050f9054, type: 2}
     ranged_projectile: {fileID: 7422263984037488310, guid: 273c9ba0b126d2f47b2e241fa65b742a, type: 3}
   WaitTime: 1
@@ -105,7 +108,7 @@ MonoBehaviour:
   - item:
       Items:
       - itemID: 0
-        amount: 100
+        amount: 3
         holder: {fileID: 0}
         storage: {fileID: 0}
         itemRef: {fileID: 11400000, guid: 61cb78406ac4d51448479f979867c7cc, type: 2}

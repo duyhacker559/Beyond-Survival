@@ -6,6 +6,8 @@ using UnityEngine;
 public class PlayerUI : MonoBehaviour
 {
     public static bool isChatting = false;
+    public static bool inInventory = false;
+    public static bool inShop = false;
 
     [SerializeField] public static Transform UI = null;
     [SerializeField] public GameObject Current_Player = null;
@@ -125,6 +127,7 @@ public class PlayerUI : MonoBehaviour
 
         wp_loadout = Loadout_UI.transform.Find("Weapon").Find("Icon").gameObject;
         LoadInventory();
+        UpdateLoadOut();
     }
 
     // Update is called once per frame
@@ -178,6 +181,35 @@ public class PlayerUI : MonoBehaviour
 
         if (usingWP != null && usingWP.itemRef)
         {
+            try
+            {
+                Transform mainWeapon = Loadout_UI.transform.Find("Weapon");
+                GameObject icon = mainWeapon.Find("Icon").gameObject;
+                GameObject amount = mainWeapon.Find("Amount").gameObject;
+                if (usingWP.amount <= 0)
+                {
+                    icon.transform.GetComponent<UnityEngine.UI.Image>().sprite = usingWP.itemRef.icon;
+                    amount.transform.GetComponent<TextMeshProUGUI>().SetText("Broken");
+                    amount.SetActive(true);
+                }
+                else
+                {
+                    if (usingWP.amount > 1)
+                    {
+                        icon.transform.GetComponent<UnityEngine.UI.Image>().sprite = usingWP.itemRef.icon;
+                        amount.transform.GetComponent<TextMeshProUGUI>().SetText("x" + usingWP.amount);
+                        amount.SetActive(true);
+                    } else
+                    {
+                        amount.SetActive(false);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+
             UnityEngine.UI.Image Icon = ItemStats_UI.transform.Find("Icon").Find("Image").GetComponent<UnityEngine.UI.Image>();
             Icon.sprite = usingWP.itemRef.icon;
 
@@ -204,6 +236,20 @@ public class PlayerUI : MonoBehaviour
         }
         else
         {
+            try
+            {
+                Transform mainWeapon = Loadout_UI.transform.Find("Weapon");
+                GameObject icon = mainWeapon.Find("Icon").gameObject;
+                GameObject amount = mainWeapon.Find("Amount").gameObject;
+
+                icon.transform.GetComponent<UnityEngine.UI.Image>().sprite = null;
+                amount.SetActive(false);
+            }
+            catch
+            {
+
+            }
+
             ItemStats_UI.SetActive(false);
         }
 
@@ -267,12 +313,24 @@ public class PlayerUI : MonoBehaviour
                 UseItem(Consumer_Slot[2].GetComponent<ItemHolder>());
             }
 
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                HideInventory();
+                CloseShop();
+            }
+
             if (PhotonNetwork.IsMasterClient)
             {
                 if (Input.GetKeyDown(KeyCode.Keypad9))
                 {
                     Admin_UI.gameObject.SetActive(true);
                 }
+            }
+        } else
+        {
+            if (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
+            {
+                Chat();
             }
         }
     }
@@ -369,6 +427,8 @@ public class PlayerUI : MonoBehaviour
 
     public void OpenShop(int shopIndex)
     {
+        inShop = true;
+
         SelectedShopItem.ShopID = shopIndex;
         Iventory_UI.SetActive(false);
         Shop shop = Game.g_shops.transform.GetChild(shopIndex).GetComponent<Shop>();
@@ -415,6 +475,8 @@ public class PlayerUI : MonoBehaviour
     {
         if (Shop_UI.gameObject.activeSelf)
         {
+            inShop = false;
+
             Shop_UI.gameObject.SetActive(false);
             SelectedShopItem.ItemData = null;
         }
@@ -443,10 +505,25 @@ public class PlayerUI : MonoBehaviour
         Iventory_UI.SetActive(!Iventory_UI.activeSelf);
         SellUI.gameObject.SetActive(false);
         Shop_UI.gameObject.SetActive(false);
+        inInventory = Iventory_UI.activeSelf;
         if (Iventory_UI.activeSelf)
         {
             Admin_UI.SetActive(false);
+        } else
+        {
         }
+    }
+
+    public void OpenInventory()
+    {
+        inInventory = true;
+        Iventory_UI.SetActive(true);
+    }
+
+    public void HideInventory()
+    {
+        inInventory = false;
+        Iventory_UI.SetActive(false);
     }
 
     public void OpenSell()
@@ -454,6 +531,7 @@ public class PlayerUI : MonoBehaviour
         Iventory_UI.SetActive(true);
         SellUI.gameObject.SetActive(true);
         Shop_UI.gameObject.SetActive(false);
+        inInventory = true;
         if (Iventory_UI.activeSelf)
         {
             Admin_UI.SetActive(false);
@@ -614,17 +692,17 @@ public class PlayerUI : MonoBehaviour
                 Transform loadout = Loadout_Consumer[i].transform;
                 GameObject icon = loadout.Find("Icon").gameObject;
                 GameObject amount = loadout.Find("Amount").gameObject;
-                if (dat.item == null)
+                if (dat.item != null && dat.item.itemRef != null)
                 {
-                    icon.SetActive(false);
-                    amount.SetActive(false);
+                    icon.transform.GetComponent<UnityEngine.UI.Image>().sprite = dat.item.itemRef.icon;
+                    amount.transform.GetComponent<TextMeshProUGUI>().SetText("x" + dat.item.amount);
+                    icon.SetActive(true);
+                    amount.SetActive(true);
                 }
                 else
                 {
-                    icon.transform.GetComponent<UnityEngine.UI.Image>().sprite = dat.item.itemRef.icon;
-                    amount.transform.GetComponent<TextMeshProUGUI>().SetText("x"+dat.item.amount);
-                    icon.SetActive(true);
-                    amount.SetActive(true);
+                    icon.SetActive(false);
+                    amount.SetActive(false);
                 }
             } catch
             {

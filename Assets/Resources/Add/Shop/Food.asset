@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c5dd3be6f43a714989db8f528c4cf1d, type: 3}
   m_Name: Food
   m_EditorClassIdentifier: 
+  canSell: 0
   shop:
   - cost: 5
     item: {fileID: 11400000, guid: 2393bdcf2cd69744d81ba71a7bc443cc, type: 2}
@@ -19,9 +20,9 @@ MonoBehaviour:
     item: {fileID: 11400000, guid: 25da450f07b793d4fb126e86103ef727, type: 2}
   - cost: 10
     item: {fileID: 11400000, guid: 251f376ce5cccdf4c975e9377b4ff5c5, type: 2}
-  - cost: 20
+  - cost: 15
     item: {fileID: 11400000, guid: 268e3344ed18fcf4eadfa4bf25399c7b, type: 2}
-  - cost: 30
+  - cost: 25
     item: {fileID: 11400000, guid: 7e832ece4f2424f4b995a96a9ca4feec, type: 2}
   - cost: 20
     item: {fileID: 11400000, guid: ac24f209a733d134f9b5519d8dfc1087, type: 2}

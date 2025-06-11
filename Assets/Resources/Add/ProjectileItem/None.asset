@@ -14,6 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   knockBack: 0
+  knockBackDuration: 0
+  applyAll: 0
   areaAttack: 0
   hitbox: {fileID: 0}
   effects: []
+  areaAttackDat: {fileID: 0}
+  emitEffect: 0
+  animEffect: {fileID: 0}
+  trap: 0
+  canPierc: 0
+  piercAmount: 0
+  overrideTarget: 0
+  target: 1
+  overrideDeathAnim: 0
+  deathAnim: 

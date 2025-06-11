@@ -19,7 +19,7 @@ MonoBehaviour:
   itemID: Bread
   itemDescription: Very delicious bread
   inputKey: 101
-  model: {fileID: 1281956672415766616, guid: d0d61e8b8d0a6c8468fc71fbf74d2e9a, type: 3}
+  model: {fileID: 1281956672415766616, guid: 077385fcff3d95a4dadb0979de43feca, type: 3}
   weight: 0
   canSell: 1
   value: 10

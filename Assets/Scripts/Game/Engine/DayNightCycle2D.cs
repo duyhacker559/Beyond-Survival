@@ -90,6 +90,7 @@ public class DayNightCycle2D : MonoBehaviour
 
     private void Awake()
     {
+        timeScale = 1f;
         enemyZone = transform.Find("EnemyZone");
         itemZone = transform.Find("ItemZone");
     }
@@ -171,6 +172,7 @@ public class DayNightCycle2D : MonoBehaviour
 
     private void Start()
     {
+        timeScale = 1f;
         if (PhotonNetwork.IsMasterClient)
         {
             currentDay = 1;

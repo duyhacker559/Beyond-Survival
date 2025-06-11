@@ -19,7 +19,7 @@ MonoBehaviour:
   itemID: Bandage
   itemDescription: Heal 30 HP and gain 10 Shield Health
   inputKey: 101
-  model: {fileID: 1281956672415766616, guid: a17e56c5c0785244c95aae3838d32930, type: 3}
+  model: {fileID: 1281956672415766616, guid: 2a741a4308b3f694aaa54377b90f6ae6, type: 3}
   weight: 0
   canSell: 1
   value: 5

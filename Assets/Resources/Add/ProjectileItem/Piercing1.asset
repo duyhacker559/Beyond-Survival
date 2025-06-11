@@ -19,10 +19,13 @@ MonoBehaviour:
   areaAttack: 0
   hitbox: {fileID: 0}
   effects: []
+  areaAttackDat: {fileID: 0}
   emitEffect: 0
   animEffect: {fileID: 0}
   trap: 0
   canPierc: 1
   piercAmount: 3
   overrideTarget: 0
-  target: 0
+  target: 1
+  overrideDeathAnim: 0
+  deathAnim: 

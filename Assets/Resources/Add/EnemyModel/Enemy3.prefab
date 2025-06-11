@@ -1115,6 +1115,9 @@ MonoBehaviour:
   baseArmor: 50
   baseDefense: 0
   baseRegenArmor: 0
+  speedBonus: 0
+  damageBonus: 0
+  defenseBonus: 0
   deathAnim: 
   hurt: {fileID: 6878403360989779259}
 --- !u!195 &5591387431694869499

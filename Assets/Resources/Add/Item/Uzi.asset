@@ -47,7 +47,7 @@ MonoBehaviour:
   swing: 0
   recoil: -0.4
   swingOffset: 0
-  damage: 10
+  damage: 15
   cooldown: 0.1
   knockBack: 1
   knockBack_Duration: 0

@@ -171,6 +171,7 @@ public class LobbyNetworkManager: MonoBehaviourPunCallbacks
             newPlayerEntry.gameObject.name = player.Value.NickName;
             _playerList.Add(newPlayerEntry);
             newPlayerEntry.transform.GetComponent<PlayerEntryUI>().SetPlayerInfo(player.Value);
+            newPlayerEntry.transform.Find("PlayerClass").GetComponent<TextMeshProUGUI>().SetText(player.Value.NickName);
         }
     }
 

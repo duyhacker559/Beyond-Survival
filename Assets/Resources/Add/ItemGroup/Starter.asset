@@ -22,7 +22,7 @@ MonoBehaviour:
       ammo: 0
       reloading: 0
       attachments: []
-    weight: 10
+    weight: 5
   - item:
       itemID: 0
       amount: 1
@@ -32,7 +32,7 @@ MonoBehaviour:
       ammo: 0
       reloading: 0
       attachments: []
-    weight: 5
+    weight: 10
   - item:
       itemID: 0
       amount: 30
@@ -42,17 +42,17 @@ MonoBehaviour:
       ammo: 0
       reloading: 1
       attachments: []
-    weight: 5
+    weight: 7
   - item:
       itemID: 0
-      amount: 5
+      amount: 20
       holder: {fileID: 0}
       storage: {fileID: 0}
       itemRef: {fileID: 11400000, guid: 04f66f5a63128f942b18c8b7b6b2ef1e, type: 2}
       ammo: 0
       reloading: 1
       attachments: []
-    weight: 1
+    weight: 2
   - item:
       itemID: 0
       amount: 1
@@ -82,7 +82,7 @@ MonoBehaviour:
       ammo: 0
       reloading: 1
       attachments: []
-    weight: 5
+    weight: 7
   - item:
       itemID: 0
       amount: 2
@@ -115,7 +115,7 @@ MonoBehaviour:
     weight: 1
   - item:
       itemID: 0
-      amount: 90
+      amount: 120
       holder: {fileID: 0}
       storage: {fileID: 0}
       itemRef: {fileID: 11400000, guid: e88954f8c62f631459e2345df3b4c95a, type: 2}

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Zombi Mutant Body_0: -4601751042512720183
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,7 +15,7 @@ MonoBehaviour:
   Items:
   - item:
       itemID: 0
-      amount: 64
+      amount: 60
       holder: {fileID: 0}
       storage: {fileID: 0}
       itemRef: {fileID: 11400000, guid: 5b116e820fc78ff4dbbcc8605efe029f, type: 2}
@@ -25,7 +25,7 @@ MonoBehaviour:
     weight: 10
   - item:
       itemID: 0
-      amount: 90
+      amount: 120
       holder: {fileID: 0}
       storage: {fileID: 0}
       itemRef: {fileID: 11400000, guid: e88954f8c62f631459e2345df3b4c95a, type: 2}
@@ -35,7 +35,7 @@ MonoBehaviour:
     weight: 10
   - item:
       itemID: 0
-      amount: 90
+      amount: 120
       holder: {fileID: 0}
       storage: {fileID: 0}
       itemRef: {fileID: 11400000, guid: 5378420af25a5114b9663b6ae8af52b5, type: 2}
@@ -45,7 +45,7 @@ MonoBehaviour:
     weight: 5
   - item:
       itemID: 0
-      amount: 30
+      amount: 60
       holder: {fileID: 0}
       storage: {fileID: 0}
       itemRef: {fileID: 11400000, guid: 943a409d7ce49d348ab3699395aeedb8, type: 2}

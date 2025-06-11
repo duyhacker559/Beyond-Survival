@@ -81,6 +81,7 @@ public class Enemy : MonoBehaviour, IPunInstantiateMagicCallback
 
     private bool dying = false;
     private float lifeTimer = 0f;
+    private float dyingTimer = 0f;
 
     public void OnPhotonInstantiate(PhotonMessageInfo info)
     {
@@ -355,6 +356,18 @@ public class Enemy : MonoBehaviour, IPunInstantiateMagicCallback
                 {
 
                     PhotonNetwork.Destroy(gameObject);
+                }
+            }
+
+            if (dying)
+            {
+                dyingTimer += Time.fixedDeltaTime;
+                if (dyingTimer > 20f)
+                {
+                    if (PhotonNetwork.IsMasterClient)
+                    {
+                        PhotonNetwork.Destroy(gameObject);
+                    }
                 }
             }
         }

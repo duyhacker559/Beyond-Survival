@@ -86,6 +86,7 @@ public class PlayerEntryUI : MonoBehaviourPunCallbacks
         {
             int avatarIndex = (int)targetPlayer.CustomProperties["playerAvatar"];
             playerAvatar.sprite = playerClass[avatarIndex].icon;
+            transform.Find("PlayerClass").GetComponent<TextMeshProUGUI>().SetText(playerClass[avatarIndex].name);
             Debug.Log($"Cập nhật avatar từ Photon: {playerAvatar.sprite.name}");
             playerProperties["playerAvatar"] = avatarIndex;
         }

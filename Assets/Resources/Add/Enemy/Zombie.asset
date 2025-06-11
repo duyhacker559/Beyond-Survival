@@ -18,6 +18,8 @@ MonoBehaviour:
   Speed: 2.5
   Armor: 0
   Defense: 0
+  haveLifeTime: 0
+  lifeTime: 0
   isBoss: 0
   stun_Resistance: 0
   huntsDelay: 2
@@ -79,7 +81,7 @@ MonoBehaviour:
         ammo: 0
         reloading: 0
         attachments: []
-    weight: 40
+    weight: 25
   canExplode: 0
   explode_Damage: 0
   explode_KnockBack: 0

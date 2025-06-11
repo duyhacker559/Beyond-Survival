@@ -75,7 +75,7 @@ MonoBehaviour:
       modify_StringValue: 
   canMelee: 1
   hitbox: {fileID: 1609670737341773925, guid: 172eaaca6aa6cbb4db63c7ae4998de6c, type: 3}
-  hitboxData: {fileID: 0}
+  hitboxData: {fileID: 11400000, guid: aaa66347ffd8b0c46acadaba1f5725e3, type: 2}
   mele_manaConsume: 0
   canShoot: 0
   fireAmount: 1

@@ -19,7 +19,7 @@ MonoBehaviour:
   itemID: Meat
   itemDescription: 'Very nutritious meat. + 20 extra Shield health. '
   inputKey: 101
-  model: {fileID: 1281956672415766616, guid: d0d61e8b8d0a6c8468fc71fbf74d2e9a, type: 3}
+  model: {fileID: 1281956672415766616, guid: 1dc8a18da6864b44c841da254f3b10ba, type: 3}
   weight: 0
   canSell: 1
   value: 10

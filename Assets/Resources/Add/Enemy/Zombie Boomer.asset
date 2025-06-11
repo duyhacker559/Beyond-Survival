@@ -18,6 +18,8 @@ MonoBehaviour:
   Speed: 5
   Armor: 0
   Defense: 0
+  haveLifeTime: 0
+  lifeTime: 0
   isBoss: 0
   stun_Resistance: 0.4
   huntsDelay: 2
@@ -62,7 +64,7 @@ MonoBehaviour:
         ammo: 0
         reloading: 0
         attachments: []
-    weight: 30
+    weight: 25
   - item:
       Items:
       - itemID: 0

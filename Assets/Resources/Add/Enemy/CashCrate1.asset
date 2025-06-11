@@ -64,7 +64,7 @@ MonoBehaviour:
         ammo: 0
         reloading: 0
         attachments: []
-    weight: 30
+    weight: 20
   canExplode: 0
   explode_Damage: 0
   explode_KnockBack: 0

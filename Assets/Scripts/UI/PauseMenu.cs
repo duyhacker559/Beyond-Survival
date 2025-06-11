@@ -27,7 +27,7 @@ public class PauseMenu : MonoBehaviourPunCallbacks
     void Update()
     {
         // Kiểm tra xem người chơi có nhấn ESC không
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !PlayerUI.inInventory && !PlayerUI.inShop)
         {
             // Nếu panel đang ẩn thì hiển thị, ngược lại thì ẩn đi
             if (!pausePanel.activeInHierarchy)

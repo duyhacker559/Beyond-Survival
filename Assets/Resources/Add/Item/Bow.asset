@@ -48,7 +48,7 @@ MonoBehaviour:
   recoil: -0.2
   swingOffset: 0
   damage: 60
-  cooldown: 1.5
+  cooldown: 0
   knockBack: 4
   knockBack_Duration: 1
   userKnockBack: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   shooting_manaConsume: 0
   reload_manaConsume: 5
   clipSize: 1
-  reload: 2
+  reload: 1.5
   emit: 0
   projectile: {fileID: 7422263984037488310, guid: 4864d61feeb715a42a8d396f8089c772, type: 3}
   projectileDat: {fileID: 11400000, guid: 87545670275b8ec41bb75297050f9054, type: 2}
